@@ -313,6 +313,15 @@
                     </a></li>
             </ul>
         </div>
+        
+        <div class="footer-submit">
+            <h2 class="footer-submit-title">Подпишитесь на рассылку</h2>
+            <div class="submit-container">
+            <form class="submit-form">
+                <input type="email" name="email" class="submit-input" placeholder="E-mail" />
+            </form>
+            <button type="button" class="btn-submit">Подписаться</button></div>
+        </div>
     </div>
     </footer>
     <!------------------------------------------------Modal window------------->
@@ -323,6 +332,59 @@
                     <use href="./img/icons.svg#icon-img-modal-close"></use>
                 </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form">
+
+            <label class="madal-label" for="name">Имя</label>
+            <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            class="modal-input"
+            required
+            />
+
+            <label class="madal-label" for="tel">Телефон</label>
+            <input
+            minlength="10"
+            type="tel" 
+            name="tel" 
+            id="tel" 
+            class="modal-input" 
+            required
+            />
+
+            <label class="madal-label" for="mail">Почта</label>
+            <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            class="modal-input" 
+            required
+            />
+
+            <label class="madal-label" for="madal-text">Комментарий</label>
+            <textarea
+            class="modal-comment"
+            placeholder="Введите текст"
+            name="madal-text"
+            id="madal-text" 
+            rows="5" 
+            placeholder="Введите текст"
+            ></textarea>
+
+            <div class="modal-field">
+            <input 
+            class="input-check"
+            type="checkbox"
+            name="agree-terms"
+            value="agree-terms"
+            id="argee-terms"
+            />
+            </div>
+
+            <button type="submit" class="madal-send-btn">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
