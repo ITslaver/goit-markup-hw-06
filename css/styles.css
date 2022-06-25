@@ -643,6 +643,8 @@ margin-right: 12px;
 }
 
 .btn-submit {
+display: flex;
+flex-direction: row-reverse;
 font-family: 'Roboto';
 font-style: normal;
 color: #FFFFFF;
@@ -668,6 +670,10 @@ background-color: #188CE8;
 transition-property: color, background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-submit-icon {
+margin-left: 10px;
 }
 
 
